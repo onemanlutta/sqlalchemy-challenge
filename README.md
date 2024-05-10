@@ -1,6 +1,9 @@
 # sqlalchemy-challenge
 # Honolulu, Hawaii Climate Analysis and Trip Planning
 
+![lights](https://github.com/onemanlutta/sqlalchemy-challenge/assets/118937365/fd67b81a-089b-414e-9b43-b2430f7d0b0d)
+Source: Google
+
 Are you considering a long holiday vacation in Honolulu, Hawaii? This README provides insights into a climate analysis of the area using Python and SQLAlchemy, helping you make informed decisions and plan your trip effectively.
 
 ## About the Project
@@ -20,6 +23,8 @@ This project focuses on analyzing and exploring climate data for Honolulu, Hawai
 - Retrieve the previous 12 months of precipitation data.
 - Load the query results into a Pandas DataFrame.
 - Plot the precipitation data and print summary statistics.
+![precipitation_plot](https://github.com/onemanlutta/sqlalchemy-challenge/assets/118937365/507be101-79f1-4110-a122-cd617e7bc5ab)
+
 
 #### 3. Station Analysis
 - Calculate the total number of stations in the dataset.
@@ -27,6 +32,8 @@ This project focuses on analyzing and exploring climate data for Honolulu, Hawai
 - Determine the lowest, highest, and average temperatures for the most active station.
 - Retrieve the previous 12 months of temperature observation (TOBS) data for the most active station.
 - Plot the TOBS data as a histogram.
+![tobs](https://github.com/onemanlutta/sqlalchemy-challenge/assets/118937365/978d8103-097a-4f3e-8236-dde0450b7208)
+
 
 #### 4. Closing the Session
 - Close the SQLAlchemy session.
