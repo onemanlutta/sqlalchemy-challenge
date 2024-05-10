@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hawaii</title>
+    <style>
+
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Style for the body */
+        body {
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Style for the navbar */
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            width: 100%;
+            
+        }
+
+        .navbar a {
+            float:center;
+            display: block;
+            color: white;
+            font-weight: bolder ;
+            font-size: x-large;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Container styles */
+        .container {
+            max-width: 800px; /* Adjust the maximum width as needed */
+            margin: 20px auto; /* Center the container horizontally */
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        /* About section */
+        #about {
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        @keyframes dance {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(20px); }
+            100% { transform: translateX(0); }
+        }
+
+        h1 {
+            color: orangered;
+            animation: dance 2s ease-in-out infinite;
+            text-align: center;
+        }
+
+        li{
+            margin-top: 20px;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+        <!-- Navbar -->
+        <div class="navbar">
+            <a href="#about">Home</a>
+        </div>
+
+        <!-- Container -->
+        <div class="container">
+
+        <h1>Vacation in Honolulu App</h1><br>
+
+
+
+
+        <div>We are delighted to make your trip to Honolulu, Hawaii as happy as it can ever get!</div><br>
+
+        
+        <h2>Available Routes</h2><br><hr>
+        <ul>
+            <li><a href="/api/v1.0/precipitation" target="_blank">/api/v1.0/precipitation </a>to view Precipitation data.</li>
+            <li><a href="/api/v1.0/stations" target="_blank">/api/v1.0/stations </a> view the list of Stations.</li>
+            <li><a href="/api/v1.0/tobs" target="_blank">/api/v1.0/tobs </a>make a note of Temperature Observations.</li>
+
+            <!--<li>
+                <a href="/api/v1.0/{{ start }}" target="_blank">"/api/v1.0/{{ start }}"</a>
+                <form action="/api/v1.0/{{ start }}" method="get">
+                    <label for="start">Start Date:</label>
+                    <input type="date" id="start" name="start" min="2016-08-23" max="2017-08-23" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </li>
+            <li><a href="/api/v1.0/<start>/<end>" target="_blank">/api/v1.0/start_end</a>
+                <form action="/api/v1.0/start_end" method="get">
+                    <label for="start_date">Start Date:</label>
+                    <input type="date" id="start_date" name="start_date" min="2016-08-23" max="2017-08-23" required>
+                    <label for="end_date">End Date:</label>
+                    <input type="date" id="end_date" name="end_date" min="2016-08-23" max="2017-08-23" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </li> -->
+            <li><a href="/api/v1.0/<start>" target="_blank">/api/v1.0/&lt;start&gt;</a>  Write Start Date in the url where there is &lt;start&gt; in the url on the page that opens after clicking this link.<br>date range from "2016-08-23" to "2017-08-23"</li>
+            <li><a href="/api/v1.0/<start>/<end>" target="_blank">/api/v1.0/&lt;start&gt;/&lt;end&gt; </a> Write Start and End Date where there is &lt;start&gt;, &lt;end&gt; in the url on the page that opens after clicking this link.</li>
+
+        </ul>
+
+    </div>
+
+    <!-- About section -->
+    <div id="about" class="container">
+        <h3>About</h3><br>
+        <p>This is a simple climate app built with Flask. It uses jsonify function to convert API data to a valid JSON response object</p>
+    </div>
+
+</body>
+</html>
