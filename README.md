@@ -47,9 +47,6 @@ This project focuses on analyzing and exploring climate data for Honolulu, Hawai
 - `/api/v1.0/tobs`: Return JSON list of temperature observations for the most active station.
 - `/api/v1.0/<start>` and `/api/v1.0/<start>/<end>`: Return JSON list of temperature statistics for specified start and end dates.
 
-## Topline Findings
-
-Provide top-level insights or key findings from the climate analysis.
 
 ## References
 
